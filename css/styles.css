@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: revert;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    padding: 1rem;
+}
+
+.section-one {
+    display: flex;
+}
+.section-one-profile-photo {
+    max-width: 100%;
+    height: auto;
+}
+.section-one-container-img,
+.section-one-container-description {
+    max-width: 50%;
+    height: auto;
+    padding: 1rem;
+}
+
+.container-form {
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    padding: 1.5rem;
+    width: 560px;
+    margin: 0 auto;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.container-form-btn-submit {
+    background-color: #8bbae9;
+    padding: 10px 0;
+    border-radius: 4px;
+    border: none;
+    outline: 0;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+.container-form-btn-submit:hover {
+    background-color: #6ea6de;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 15px;
+}
