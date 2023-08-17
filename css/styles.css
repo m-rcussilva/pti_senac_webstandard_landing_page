@@ -37,8 +37,13 @@ a:hover {
 }
 
 ul {
-    list-style-type: circle;
+    list-style-type: none;
     padding-left: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .header {
@@ -49,14 +54,11 @@ ul {
 
 .section {
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .section-one {
     display: flex;
-}
-.section-one-profile-photo {
-    max-width: 100%;
-    height: auto;
 }
 .section-one-container-img,
 .section-one-container-description {
@@ -64,12 +66,27 @@ ul {
     height: auto;
     padding: 1rem;
 }
+@media only screen and (max-width: 800px) {
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
+.section-three-ul {
+    text-align: center;
+}
+
+.section-four p {
+    margin-bottom: 3rem;
+}
 .container-form {
     border-radius: 6px;
     border: 1px solid #e3e3e3;
     padding: 1.5rem;
-    width: 560px;
+    width: 500px;
     margin: 0 auto;
 }
 .form {
@@ -97,4 +114,49 @@ textarea {
     border-radius: 4px;
     resize: none;
     margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+    .container-form {
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .container-form {
+        width: 280px;
+    }
+}
+
+.container-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0.5rem;
+}
+.testimonials {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 25px;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+@media only screen and (max-width: 775px) {
+    .container-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 0.5rem;
 }
