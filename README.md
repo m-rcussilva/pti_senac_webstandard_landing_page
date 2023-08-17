@@ -1,10 +1,8 @@
 # PTI Senac - Web Standards
 
-Tecnologias:
+Tecnologias: HTML5 e CSS33
 
-    HTML5 e CSS33
-
-Textos fictícios foram gerados pelo ChatGPT.
+Textos fictícios foram gerados pelo ChatGPT.  
 Imagens foram geradas pelo Image Creator da Microsoft Bing.
 
 ### Links
